@@ -1,0 +1,86 @@
+.homeBgImg {
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden; /* cut out content that flow outside the screen viewport */
+    /* height: 100vh; */
+    min-height: 100vh;
+}
+
+.spaceHomeContentContainer {
+    z-index: 1;
+}
+.homeHeadingTwo,
+.homeHeading {
+    text-transform: uppercase;
+}
+.homeHeading {
+
+}
+
+.exploreContainer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    position: relative;
+    transition: width 3s;
+    font-size: 2rem;
+}
+.exploreContainer a:hover::before:hover {
+    /* width: 1000px; */
+}
+.exploreContainer a:hover::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff4b;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    z-index: -1;
+    animation: scale .5s;
+}
+
+@keyframes scale {
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+@media (max-width: 900px) {
+    .homeSection {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .homeBgImg {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        background-size: cover;
+    }
+}
+
+@media (max-width: 375px) {
+    .homeBgImg {
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        background-size: cover;
+    }
+
+    
+
+    .homeHeading {
+        font-size: 5rem;
+    }
+}
+
+/* @media (min-height: 1024px) {
+    section {
+        padding-top: 20rem;
+    }
+} */
