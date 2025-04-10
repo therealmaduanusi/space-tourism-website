@@ -12,6 +12,10 @@ function Navigation() {
   function handleBurger() {
     setHamburger(prevValue => !prevValue)
   }
+
+  function closeHamburger() {
+    setHamburger(prevValue => !prevValue)
+  }
   return (
     <header className='flex justify-between md:pt-[2rem]'>
         <div className="logo md:pl-[5rem] xs:self-center ">
@@ -21,16 +25,16 @@ function Navigation() {
         <nav className='flex navigation xs:bg-[#ffffff6e]'>
             <ul className={`nav-ul-lists ${hamburger && 'displayMenu'}`}>
                 <li className='xs:inline-block max-sm:pb-[1rem] lists-link'>
-                    <NavLink className='no-underline text-[#ffffff78]' to='/'><span className='text-[#fff]'>00</span> HOME</NavLink>
+                    <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/'><span className='text-[#fff]'>00</span> HOME</NavLink>
                 </li>
                 <li className='xs:inline-block lists-link'>
-                    <NavLink className='no-underline text-[#ffffff78]' to='/destination'><span className='text-[#fff]'>01</span> DESTINATION</NavLink>
+                    <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/destination'><span className='text-[#fff]'>01</span> DESTINATION</NavLink>
                 </li>
                 <li className='xs:inline-block max-sm:py-[1rem] lists-link'>
-                    <NavLink className='no-underline text-[#ffffff78]' to='/crew'><span className='text-[#fff]'>02</span> CREW</NavLink>
+                    <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/crew'><span className='text-[#fff]'>02</span> CREW</NavLink>
                 </li>
                 <li className='xs:inline-block lists-link'>
-                    <NavLink className='no-underline text-[#ffffff78]' to='/technology'><span className='text-[#fff]'>03</span> TECHNOLOGY</NavLink>
+                    <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/technology'><span className='text-[#fff]'>03</span> TECHNOLOGY</NavLink>
                 </li>
             </ul>
             <div onClick={handleBurger} className="hamburger-menu xs:hidden">

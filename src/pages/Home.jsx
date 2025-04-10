@@ -1,7 +1,7 @@
 import React from 'react'
-import Navigation from '../components/Navigation'
 import '../styles/Home.css'
 import { Link } from 'react-router-dom'
+import Navigation from '../components/Navigation'
 
 function Home() {
   return (

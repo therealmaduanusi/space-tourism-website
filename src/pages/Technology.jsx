@@ -1,6 +1,6 @@
 import React from "react";
-import Navigation from "../components/Navigation";
 import '../styles/Technology.css'
+import Navigation from "../components/Navigation";
 
 function Technology() {
   return (

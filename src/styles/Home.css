@@ -3,24 +3,14 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: #fff;
-    position: relative;
-    z-index: 1;
     overflow-x: hidden; /* cut out content that flow outside the screen viewport */
-    /* height: 100vh; */
     min-height: 100vh;
 }
 
-.spaceHomeContentContainer {
-    z-index: 1;
-}
 .homeHeadingTwo,
 .homeHeading {
     text-transform: uppercase;
 }
-.homeHeading {
-
-}
-
 .exploreContainer a {
     display: flex;
     align-items: center;
@@ -30,12 +20,12 @@
     border-radius: 50%;
     width: 17rem;
     height: 17rem;
-    position: relative;
     transition: width 3s;
     font-size: 2rem;
 }
 .exploreContainer a:hover::before:hover {
-    /* width: 1000px; */
+    width: 1000px;
+    height: 5677px;
 }
 .exploreContainer a:hover::before {
     content: '';
@@ -44,8 +34,7 @@
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
-    z-index: -1;
-    animation: scale .5s;
+    animation: scale .3s ease-out;
 }
 
 @keyframes scale {

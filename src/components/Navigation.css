@@ -21,7 +21,14 @@
         padding: 0 2rem;
     }
 }
-
+@media (min-width: 768px) {
+    header {
+        position: fixed;
+    }
+}
+header {
+    width: 100%;
+}
 .line {
     width: 100%;
     height: 2px;
@@ -41,8 +48,8 @@
     }
 }
 @media (max-width: 768px) {
-    header{
-        padding-left: 1rem;
+    .logo {
+        margin: 1rem;
     }
 }
 @media (max-width: 660px) {
@@ -51,38 +58,63 @@
     }
     .navigation {
         padding-left: 0;
-        align-self: center;
     }
     .nav-ul-lists > .lists-link {
-        /* padding: 1rem 0;
-        margin: 0 1rem; */
         font-size: 0.5rem;
     }
 }
 @media (max-width: 375px) {
-    header {
-        padding: 1rem;
-    }
     /* navigation */
-    .nav-ul-container {
-        /* position: relative; */
-        min-height: 100%;
+    .navigation {
+        width: 50%;
+        justify-content: end;
+        margin: 1rem;
     }
     .nav-ul-lists {
         position: absolute;
-        z-index: 2;
         right: 0;
         top: 0;
-        left: 0;
+        left: 50%;
         min-height: 100%;
         background-color: grey;
-        padding-top: 6rem;
+        padding-top: 8rem;
+        padding-left: 1rem;
+        animation: left .3s;
     }
+    @keyframes left {
+        from{left: 100%}
+        to{left: 50%}
+    }
+    .nav-ul-lists > .lists-link {
+        font-size: 1rem;
+    }
+
     /* State Menu */
     .displayMenu {
         display: none;
     }
     .hamburger-menu {
-        z-index: 3;
+        z-index: 1;
+    }
+}
+
+/* Distances Navigation styles */
+.destinationOutlet a {
+    display: inline-block;
+}
+.destinationOutlet a:hover {
+    border-bottom: 1px solid #fff;
+}
+.destinationOutlet a {
+    border-bottom: 1px solid transparent;
+}
+.destinationOutlet .active {
+    border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 768px) {
+    .destinationOutlet {
+        position: relative;
+        left: 58%;
     }
 }
