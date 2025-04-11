@@ -16,10 +16,10 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
+The Space Tourism website gives us a littel wonder of **"OUTERSPACE"** in addition with crew.
+Built with Reactjs for state and component management, React-Router for routing through each page and Tailwind framework for styling.
 ### The challenge
 
 Users should be able to:
@@ -50,15 +50,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - Semantic HTML5 markup
+- Reactjs React-router
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- [Tailwind](https://) - For styles
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -73,43 +71,39 @@ code snippets, see below:
 ```html
 <!-- Home Element -->
 <main className='homeBgImg '>
-    <Navigation />
-    <p>Home</p>
+  <Navigation />
+  <p>Home</p>
 </main>
 <!-- Destination Element -->
 <div className='destinationBgImg'>
-    <Navigation />
-    <p>Destination!</p>
+  <Navigation />
+  <p>Destination!</p>
 </div>
 <!-- Crew Element -->
 <div className='crewBgImg'>
-    <Navigation />
-    <p>Crew!</p>
+  <Navigation />
+  <p>Crew!</p>
 </div>
 <!-- Technology Element -->
 <div className='technologyBgImg'>
-    <Navigation />
-    <p>Technology!</p>
+  <Navigation />
+  <p>Technology!</p>
 </div>
 ```
 ```css
 @media (min-width: 768px) {
-    header {
-        position: fixed;
-    }
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+  header {
+    position: fixed;
+  }
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Get the right path to what file your looking for seems simple but even the slightest bit of error on your path can lead to confusion you don't want. I suggest arranging them or you go along as you build.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+***Mistake can happen but don't let it get to you saying you should have mastered this by now***
+
 
 ### Useful resources
 
@@ -120,14 +114,11 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [maduanusi.vercel.app](https://maduanusi.vercel.app)
+- Frontend Mentor - [@therealmaduanusi](https://www.frontendmentor.io/profile/therealmaduanusi)
+- Twitter - [@madu_anusi](https://www.twitter.com/madu_anusi)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+FMC for creating such challenge and me for taking it on
