@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 import './Navigation.css'
 function DistanceNavigation() {
     return (
-        <div className="destinationOutlet">
+        <div className="destinationOutlet max-sm:mb-[1rem]">
             <ul>
                 <li className='inline-block text-white'>
                     <NavLink to='moon'>MOON</NavLink>

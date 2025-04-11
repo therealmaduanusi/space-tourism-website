@@ -14,7 +14,7 @@ function Technology({ technology }) {
   return (
     <div className="technologyBgImg text-white pb-[3rem]">
       <Navigation />
-      <p className="font-bold text-[3rem] md:pt-[10rem] max-md:pt-[10rem] mb-[3rem] md:ml-[10rem]">
+      <p className="font-bold text-[2.5rem] max-sm:text-[2rem] md:pt-[10rem] max-md:pt-[5rem] mb-[3rem] md:ml-[10rem]">
         <span className="text-[#fff5]">03</span> Space launch 101
       </p>
       <SpaceLauch
@@ -22,20 +22,22 @@ function Technology({ technology }) {
         technology={technology}
         handleIndex={handleIndex}
         spaceName={currentSpace.name}
-        spaceImage={currentSpace.images.portrait}
+        spaceImagePortrait={currentSpace.images.portrait}
+        spaceImageLandScape={currentSpace.images.landscape}
         spaceDescription={currentSpace.description}
        />
     </div>
   );
 }
 
-function SpaceLauch({technology, handleIndex, currentIndex, spaceName, spaceImage, spaceDescription}) {
+function SpaceLauch({technology, handleIndex, currentIndex, spaceName, spaceImagePortrait, spaceImageLandScape, spaceDescription}) {
   return (
     <div className="spaceLauchConatiner flex max-md:flex-col md:max-w-[1000px] md:mx-auto gap-[2rem]">
       <div className="spaceContents flex max-md:flex-col gap-[2rem]">
-        <div className="spaceToggle flex md:flex-col gap-[1rem]">
+        <div className="spaceToggle flex md:flex-col gap-[1rem] max-md:justify-center">
           {technology.map((_, index) => (
             <button
+              key={index}
               onClick={() => handleIndex(index)}
               className={`spaceBtn ${index === currentIndex ? 'bg-[#fff] text-[#000]' : ''}`}
             >{index + 1}</button>
@@ -47,8 +49,8 @@ function SpaceLauch({technology, handleIndex, currentIndex, spaceName, spaceImag
           <p>{spaceDescription}</p>
         </div>
       </div>
-      <img className="spaceImg" src={spaceImage} alt={`space image ${spaceName}`} />
-      {/* <img src={spaceImage} alt={`space image ${spaceName}`} /> */}
+      <img className="spaceImg max-md:hidden w-[50%]" src={spaceImagePortrait} alt={`space image ${spaceName}`} />
+      <img className="spaceImg md:hidden order-first" src={spaceImageLandScape} alt={`space image ${spaceName}`} />
     </div>
   );
 }

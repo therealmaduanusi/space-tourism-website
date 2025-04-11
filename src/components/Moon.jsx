@@ -13,7 +13,7 @@ function Moon({destinations}) {
     <div className="outlet flex justify-between max-md:flex-col">
         <img src={png} alt="Moon Image" />
         <div className="marsContentsContainer text-white max-md:order-first">
-            <h3 className='uppercase text-[5rem]'>{name}</h3>
+            <h3 className='uppercase xs:text-[5rem] max-sm:text-[3rem]'>{name}</h3>
             <p>{description}</p>
             <div className='bg-[#fff] w-[100%] h-[2px] mt-[3rem] mb-[1.5rem]'></div>
             <div className="meterTimeContainer uppercase flex justify-between">
