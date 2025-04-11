@@ -4,7 +4,7 @@ import Navigation from "../components/Navigation";
 
 function Crew({ crews }) {
   const [currentIndex, setCurrentIndex] = useState(3);
-  console.log(crews);
+  // console.log(crews);
   const currentCrew = crews[currentIndex];
   const handleDotClick = (index) => {
     setCurrentIndex(index);
@@ -13,7 +13,7 @@ function Crew({ crews }) {
   return (
     <div className="crewBgImg text-white pb-[3rem]">
       <Navigation />
-      <p className="font-bold text-[3.5rem] md:pt-[10rem] max-md:pt-[10rem] mb-[3rem] md:ml-[5rem]">
+      <p className="font-bold text-[3rem] md:pt-[10rem] max-md:pt-[10rem] mb-[3rem] md:ml-[10rem]">
         <span className="text-[#fff5]">02</span> Meet your crew
       </p>
       <CrewContents
@@ -40,7 +40,7 @@ function CrewContents({
   handleDotClick,
 }) {
   return (
-    <div className="crewContainer flex justify-between max-md:flex-col max-w-[1000px] mx-auto">
+    <div className="crewContainer h-[30rem] flex justify-between max-md:flex-col max-w-[1000px] mx-auto">
       <div className="crewContents self-center">
         <p className="text-[2rem]">{crewRole}</p>
         <p className="my-[0.5rem] text-[3.5rem]">{crewName}</p>
@@ -57,7 +57,7 @@ function CrewContents({
           ))}
         </div>
       </div>
-      <img className="md:w-[30rem] md:h-[30rem]" src={crewImg} alt={`crew Image ${crewName}`} />
+      <img className="md:w-[50%] " src={crewImg} alt={`crew Image ${crewName}`} />
     </div>
   );
 }

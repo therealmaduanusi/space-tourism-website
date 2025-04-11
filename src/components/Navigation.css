@@ -80,6 +80,7 @@ header {
         padding-top: 8rem;
         padding-left: 1rem;
         animation: left .3s;
+        z-index: 1;
     }
     @keyframes left {
         from{left: 100%}

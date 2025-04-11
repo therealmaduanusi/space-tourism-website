@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import spaceTourismList from "../data.json";
 import './App.css'
@@ -33,7 +33,7 @@ function App() {
           <Route path='titan' element={<Titan destinations={destinations} />}></Route>
         </Route>
         <Route path="/crew" element={<Crew crews={crew} />}></Route>
-        <Route path="/technology" element={<Technology />}></Route>
+        <Route path="/technology" element={<Technology technology={technology} />}></Route>
         <Route path="*" element={<p>page not found</p>}></Route>
       </Routes>
     </>

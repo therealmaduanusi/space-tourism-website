@@ -4,6 +4,25 @@
     min-height: 100vh;
     overflow: hidden;
 }
+
+.spaceBtn {
+    border: 1px solid #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.spaceBtn:hover {
+    background-color: #fff;
+    color: #000;
+}
+.spaceContent, .spaceImg {
+    animation: opacity 2s;
+}
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 @media (max-width: 768px) {
     .technologyBgImg {
         background-image: url('/assets/technology/background-technology-tablet.jpg');
