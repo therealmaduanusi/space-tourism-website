@@ -6,6 +6,9 @@
     overflow-x: hidden; /* cut out content that flow outside the screen viewport */
     min-height: 100vh;
 }
+.homeHeading {
+    font-family: "Bellefair", serif;
+}
 
 .homeHeadingTwo,
 .homeHeading {
@@ -22,6 +25,7 @@
     height: 17rem;
     transition: width 3s;
     font-size: 2rem;
+    font-family: "Bellefair", serif;
 }
 .exploreContainer a:hover::before:hover {
     width: 1000px;
@@ -61,7 +65,6 @@
         background-size: cover;
     }
 
-    
 
     .homeHeading {
         font-size: 5rem;

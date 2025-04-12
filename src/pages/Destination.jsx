@@ -10,9 +10,9 @@ function Destination() {
     <div className='destinationBgImg'>
       <Navigation />
       <div className="destination mt-[10rem] max-md:mt-[5rem] md:ml-[10rem]">
-        <h2 className="max-md:text-center text-white text-[2.5rem] max-sm:text-[2rem] max-sm:text-[2rem] mb-[2rem]">
+        <p className="max-sm:text-center text-white text-[2.5rem] max-sm:text-[2rem] max-sm:text-[2rem] mb-[2rem]">
           <span className='text-[#fff5]'>02</span> Pick Your Destination
-        </h2>
+        </p>
       </div>
       <div className='max-md:text-center'>
         <DistanceNavigation />

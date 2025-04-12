@@ -15,10 +15,15 @@
         padding: 2rem 0;
         margin: 0 1rem;
     }
+    .navigation {
+        background: rgba(255, 255, 255, 0.1); /* translucent white */
+        backdrop-filter: blur(10px) saturate(150%);
+        -webkit-backdrop-filter: blur(10px) saturate(150%);
+    }
 }
 @media (min-width: 460px) {
     .nav-ul-lists {
-        padding: 0 2rem;
+        padding: 0 2.5rem;
     }
 }
 @media (min-width: 768px) {
@@ -32,7 +37,9 @@ header {
 .line {
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.1); /* translucent white */
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
 }
 
 .logo {
@@ -74,17 +81,17 @@ header {
         position: absolute;
         right: 0;
         top: 0;
-        left: 50%;
+        left: 0;
         min-height: 100%;
-        background-color: grey;
+        background-color: #0B0D17;
         padding-top: 8rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
         animation: left .3s;
         z-index: 1;
     }
     @keyframes left {
         from{left: 100%}
-        to{left: 50%}
+        to{left: 0}
     }
     .nav-ul-lists > .lists-link {
         font-size: 1rem;

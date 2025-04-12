@@ -22,15 +22,15 @@ function Navigation() {
             <Link to='/'><img src={logo} alt="Space Tourism Logo" /></Link>
         </div>
         <div className="line self-center relative left-[10px]"></div>
-        <nav className='flex navigation xs:bg-[#ffffff6e]'>
+        <nav className='flex navigation'>
             <ul className={`nav-ul-lists ${hamburger && 'displayMenu'}`}>
-                <li className='xs:inline-block max-sm:pb-[1rem] lists-link'>
+                <li className='xs:inline-block max-sm:pb-[2rem] lists-link'>
                     <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/'><span className='text-[#fff]'>00</span> HOME</NavLink>
                 </li>
                 <li className='xs:inline-block lists-link'>
                     <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/destination'><span className='text-[#fff]'>01</span> DESTINATION</NavLink>
                 </li>
-                <li className='xs:inline-block max-sm:py-[1rem] lists-link'>
+                <li className='xs:inline-block max-sm:py-[2rem] lists-link'>
                     <NavLink onClick={closeHamburger} className='no-underline text-[#ffffff78]' to='/crew'><span className='text-[#fff]'>02</span> CREW</NavLink>
                 </li>
                 <li className='xs:inline-block lists-link'>

@@ -13,6 +13,9 @@ export default {
           'xs': '375px',
           'md': '768px',
           'xl': '900px',
+        },
+        fontFamily : {
+          space: ["Bellefair", "serif"]
         }
       },
     },
