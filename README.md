@@ -43,7 +43,7 @@ TECHNOLOGY
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FMC Solution](https://www.frontendmentor.io/solutions/reactjs-react-router-and-tailwind-rt2W0jchic)
 - Live Site URL: [space tourism](https://space-tourism-website-eta-six.vercel.app/)
 
 ## My process
