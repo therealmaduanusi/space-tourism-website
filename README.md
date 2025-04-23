@@ -18,7 +18,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 
 ## Overview
-The Space Tourism website gives us a littel wonder of **"OUTERSPACE"** in addition with crew.
+The Space Tourism website gives us a little wonder of **"OUTERSPACE"** in addition with crew.
 Built with Reactjs for state and component management, React-Router for routing through each page and Tailwind framework for styling.
 ### The challenge
 
